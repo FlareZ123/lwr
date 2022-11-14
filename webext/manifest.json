@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Lift Web Restrictions",
+    "description": "A simple, easy to use extension that removes most web annoyances: ads, cookie banners, etc. It also enhances some online games by introducing mods into them, and more!",
+    "version": "0.0.1",
+    "icons": {
+        "16": "logo/logo-16.png",
+        "48": "logo/logo-48.png",
+        "128": "logo/logo-128.png"
+    },
+    "options_page": "settings/settings.html",
+    "action": {
+        "default_title": "Lift Web Restrictions",
+        "default_popup": "popup/popup.html"
+    },
+    "permissions": [],
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "background": {
+        "service_worker": "service-worker.js"
+    },
+    "content_scripts": [{
+        "js": ["foreground.js"],
+        "matches": ["https://github.com/*"]
+    }]
+}
