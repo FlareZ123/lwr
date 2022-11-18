@@ -45545,10 +45545,11 @@ const EXEC = (() => {
 const fireHooks = new Map([
     [0, () => {
         console.log("hk0");
-        EXEC.apply(undefined);
+        //EXEC.apply(undefined);
     }],
     [1, () => {
         console.log("hk1");
+        EXEC.apply(undefined);
     }],
     [2, () => {
         console.log("hk2");
