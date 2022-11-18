@@ -9206,7 +9206,12 @@ const EXEC = (() => {
         });
     } else if (["moomoo.io", "dev.moomoo.io", "sandbox.moomoo.io"].includes(hostname)) {
 
-        Utils.loadModule("/serverData");
+        const x = new XMLHttpRequest();
+        x.open("GET", "/serverData", false);
+        x.send();
+        if (x.responseText) {
+            window.vultr = JSON.parse(x.responseText);
+        };
 
         let hoistedStart = () => {};
         function loadOldBundle() {
