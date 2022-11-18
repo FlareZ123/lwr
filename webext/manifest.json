@@ -8,11 +8,6 @@
         "48": "logo/sw48.png",
         "128": "logo/sw128.png"
     },
-    "options_page": "settings/settings.html",
-    "action": {
-        "default_title": "Lift Web Restrictions",
-        "default_popup": "popup/popup.html"
-    },
     "permissions": [],
     "host_permissions": [
         "*://*/*"
@@ -21,7 +16,28 @@
         "service_worker": "service-worker.js"
     },
     "content_scripts": [{
-        "js": ["userscript.js"],
-        "matches": ["*://*/*"]
+        "js": [
+            "modules/script.js"
+        ],
+        "matches": [
+            "*://*.discord.com/app",
+            "*://*.discord.com/channels/*",
+            "*://*.discord.com/login",
+            "*://facebook.com/*",
+            "*://*.facebook.com/*",
+            "*://starve.io/*",
+            "*://classroom.google.com/*",
+            "*://*.moomoo.io/*",
+            "*://moomoo.io/*",
+            "*://sandbox.moomoo.io/*",
+            "*://dev.moomoo.io/*",
+            "*://linkvertise.com/*",
+            "*://www.google.com/recaptcha/api2/*",
+            "*://diep.io/*",
+            "*://www.baidu.com/*",
+            "*://baidu.com/*",
+            "*://m.baidu.com/*"
+        ],
+        "run-at": "document-start"
     }]
 }
