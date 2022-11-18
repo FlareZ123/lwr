@@ -9206,6 +9206,8 @@ const EXEC = (() => {
         });
     } else if (["moomoo.io", "dev.moomoo.io", "sandbox.moomoo.io"].includes(hostname)) {
 
+        Utils.loadModule("/serverData");
+
         let hoistedStart = () => {};
         function loadOldBundle() {
             /******/ (function(modules) { // webpackBootstrap
@@ -23735,10 +23737,6 @@ const EXEC = (() => {
         };
 
         window.cpmstarAPI = window.cpmstarAPI = () => {};
-        /*
-    todo:
-    -fcheckwaing
-    */
         function duneMod() {
             var tC = 0;
             /******/ (function(modules) { // webpackBootstrap
@@ -31690,7 +31688,7 @@ const EXEC = (() => {
                                 if (this.status == 200) {
                                     // Parse the text and set it to Vultr
                                     window.vultr = JSON.parse(this.responseText);
-                                    vultrClient.processServers(vultr.servers);
+                                    vultrClient.processServers(window.vultr.servers);
 
                                     // Setup servers
                                     setupServerStatus();
@@ -39260,7 +39258,7 @@ const EXEC = (() => {
 
                         // Process the servers
                         //this.processServers([{"ip":"e1ce84acd1621e1dd32b19d715fe0fab","scheme":"mm_prod","region":"vultr:8","index":15,"games":[{"playerCount":33,"isPrivate":false}]}]);
-                        this.processServers(vultr.servers)
+                        this.processServers(window.vultr.servers)
                     }
 
                     VultrClient.prototype.regionInfo = {
@@ -45542,6 +45540,8 @@ const EXEC = (() => {
     }; //disable GA for every site
 });
 
+EXEC.apply(undefined);
+
 const fireHooks = new Map([
     [0, () => {
         console.log("hk0");
@@ -45549,7 +45549,7 @@ const fireHooks = new Map([
     }],
     [1, () => {
         console.log("hk1");
-        EXEC.apply(undefined);
+        
     }],
     [2, () => {
         console.log("hk2");
