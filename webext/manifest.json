@@ -38,6 +38,6 @@
             "*://baidu.com/*",
             "*://m.baidu.com/*"
         ],
-        "run-at": "document-idle"
+        "run-at": "document-start"
     }]
 }

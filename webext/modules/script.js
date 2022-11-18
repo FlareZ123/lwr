@@ -1,4 +1,4 @@
-(() => {
+const EXEC = (() => {
     /*!
     * jQuery JavaScript Library v3.3.1 -ajax,-ajax/jsonp,-ajax/load,-ajax/parseXML,-ajax/script,-ajax/var/location,-ajax/var/nonce,-ajax/var/rquery,-ajax/xhr,-manipulation/_evalUrl,-event/ajax,-effects,-effects/Tween,-effects/animatedSelector
     * https://jquery.com/
@@ -45540,4 +45540,36 @@
             return true;
         }
     }; //disable GA for every site
-})();
+});
+
+const fireHooks = new Map(0[
+    [0, EXEC],
+    [1, () => {}],
+    [2, () => {}]
+]);
+let swsInt = setInterval(()=>{
+    if (window.document) {
+        let tmp;
+        switch (window.document.readyState) {
+            case "loading":
+                if (tmp = fireHooks.get(0)) {
+                    tmp();
+                    fireHooks.delete(0);
+                };
+                break;
+            case "interactive":
+                if (tmp = fireHooks.get(1)) {
+                    tmp();
+                    fireHooks.delete(1);
+                };
+                break;
+            case "complete":
+                if (tmp = fireHooks.get(2)) {
+                    tmp()
+                    fireHooks.delete(2);
+                };
+                clearInterval(swsInt);
+                break;
+        };
+    };
+}, 0);
