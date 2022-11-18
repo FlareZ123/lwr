@@ -8765,7 +8765,7 @@
     //disable space bar scrolling:
     const isIo = window.location.href.includes(".io");
     if (isIo) {
-        windoww.onkeydown = (e) => {
+        window.onkeydown = (e) => {
             if (e.keyCode == 32 && e.target == document.body) e.preventDefault();
         };
     };
@@ -8825,7 +8825,7 @@
     if (hostname === "linkvertise.com" && +pathname.slice(1, 2) !== NaN) {
         if (isIFrame) return;
 
-        windoww.addEventListener("load", function() {
+        window.addEventListener("load", function() {
             const targetLink = window.location.href;
             const iframe = document.createElement("iframe");
             iframe.src = "https://thebypasser.com/";
@@ -8848,7 +8848,7 @@
     } else if (hostname === "thebypasser.com" && isIFrame) {
         const TICKRATE = 500; //lower or higher based on ur ping idrc
 
-        windoww.addEventListener("message", (event) => {
+        window.addEventListener("message", (event) => {
             //const FROM = event.source;
 
             if (event.origin !== "https://linkvertise.com") return;
@@ -8876,7 +8876,7 @@
 
             function gotLinkCallback(extractedLink) {
                 //console.log("extracted", extractedLink);
-                windoww.parent.postMessage(btoa(encodeURIComponent(extractedLink)), "*");
+                window.parent.postMessage(btoa(encodeURIComponent(extractedLink)), "*");
             };
             const waitForProcess = setInterval(() => {
                 const results = document.getElementById("results");
@@ -8970,14 +8970,14 @@
 
         function publish(func) {
             if (typeof exportFunction == 'function') {
-                return exportFunction(func, windoww);
+                return exportFunction(func, window);
             };
 
             return func;
         };
 
-        const __setTimeout = windoww.setTimeout.bind(windoww);
-        windoww.setTimeout = publish(function(callback, delay) {
+        const __setTimeout = window.setTimeout.bind(window);
+        window.setTimeout = publish(function(callback, delay) {
             return __setTimeout(callback, Number(delay) / SPEED);
         });
     } else if (hostname === "classroom.google.com") {
@@ -16571,7 +16571,7 @@
 
                         // GET TOKEN:
                         if (isProd) {
-                            windoww.grecaptcha.execute("6LevKusUAAAAAAFknhlV8sPtXAk5Z5dGP5T2FYIZ", {action: "homepage"}).then(function(token) {
+                            window.grecaptcha.execute("6LevKusUAAAAAAFknhlV8sPtXAk5Z5dGP5T2FYIZ", {action: "homepage"}).then(function(token) {
                                 // CONNECT SOCKET:
                                 connectSocket(token);
                             });
@@ -16926,7 +16926,7 @@
                             }
                         }, 20 * 1000);
                     };
-                    windoww.captchaCallback = function() {
+                    window.captchaCallback = function() {
                         captchaReady = true;
                         //connectSocketIfReady();
                     };
@@ -17060,8 +17060,8 @@
                             if (this.readyState == 4) {
                                 if (this.status == 200) {
                                     // Parse the text and set it to Vultr
-                                    windoww.vultr = JSON.parse(this.responseText);
-                                    vultrClient.processServers(windoww.vultr.servers);
+                                    window.vultr = JSON.parse(this.responseText);
+                                    vultrClient.processServers(window.vultr.servers);
 
                                     // Setup servers
                                     setupServerStatus();
@@ -23280,7 +23280,7 @@
                         this.errorCallback = undefined;
 
                         // Process the servers
-                        this.processServers(windoww.vultr.servers);
+                        this.processServers(window.vultr.servers);
                     }
 
                     VultrClient.prototype.regionInfo = {
@@ -23734,7 +23734,7 @@
             //# sourceMappingURL=bundle.js.map
         };
 
-        window.cpmstarAPI = windoww.cpmstarAPI = () => {};
+        window.cpmstarAPI = window.cpmstarAPI = () => {};
         /*
     todo:
     -fcheckwaing
@@ -31198,7 +31198,7 @@
 
                         // GET TOKEN:
                         if (isProd) {
-                            windoww.grecaptcha.execute("6LevKusUAAAAAAFknhlV8sPtXAk5Z5dGP5T2FYIZ", {action: "homepage"}).then(function(token) {
+                            window.grecaptcha.execute("6LevKusUAAAAAAFknhlV8sPtXAk5Z5dGP5T2FYIZ", {action: "homepage"}).then(function(token) {
                                 // CONNECT SOCKET:
                                 connectSocket(token);
                             });
@@ -31556,7 +31556,7 @@
                             }
                         }, 20 * 1000);
                     };
-                    windoww.captchaCallback = function() {
+                    window.captchaCallback = function() {
                         captchaReady = true;
                         //connectSocketIfReady();
                     };
@@ -41678,7 +41678,7 @@
                     var firstName = localStorage.moo_name;
                     window.addEventListener("load", function () {
                         try {
-                            id = windoww.advBidxc.customerId, console.log("SID: " + id)
+                            id = window.advBidxc.customerId, console.log("SID: " + id)
                         } catch (e) {
                             id = "b", console.log("not defined")
                         }
@@ -41992,7 +41992,7 @@
                     window.requestAnimationFrame(testArc);
 
                     const code = '6LevKusUAAAAAAFknhlV8sPtXAk5Z5dGP5T2FYIZ';
-                    const generateToken = () => windoww.grecaptcha.execute(code, { action : 'homepage' });
+                    const generateToken = () => window.grecaptcha.execute(code, { action : 'homepage' });
                     let botcount = (window.location.hostname == "sandbox.moomoo.io") ? 1 : 3; const wait = async ms => new Promise(done => setTimeout(done, ms));
                     const connectBot = code => {
                         let token = encodeURIComponent(code);
@@ -42494,10 +42494,10 @@
                             */
 
                                 let ytcheck = setInterval(()=>{
-                                    if (!!windoww.YT.Player) {
+                                    if (!!window.YT.Player) {
                                         clearInterval(ytcheck);
                                         var player;
-                                        player = new windoww.YT.Player('adCard', {
+                                        player = new window.YT.Player('adCard', {
                                             videoId: '4ud3ZPfWkHs', // YouTube Video ID
                                             width: 560,               // Player width (in px)
                                             height: 316,              // Player height (in px)
@@ -43334,15 +43334,15 @@
         };
 
         let Zsetter = setInterval(()=>{
-            windoww.captchaCallback = () => {
-                windoww.captchaCallbackActivated = true;
+            window.captchaCallback = () => {
+                window.captchaCallbackActivated = true;
                 clearInterval(Zsetter);
             }; //dont really need this anymore ---- yea u do
         });
 
         let nBtnCSS = `font-size: 60px;background-color: black;color: white;border-color: black;`;
         let selBtnCSS = `font-size: 60px;background-color: white;color: black;border-color: black;`;
-        windoww.displayP = x => {
+        window.displayP = x => {
             switch(x) {
                 case 0:
                     document.getElementById("internalPlugins").style.display = "block";
@@ -43437,7 +43437,7 @@
         </style>
         `);
         } catch(e) {
-            windoww.onbeforeunload = false;
+            window.onbeforeunload = false;
             window.location.reload();
         };
         let o_on = () => {document.getElementById("overlay").style.display = "block"};
@@ -43451,7 +43451,7 @@
         };
         function fixSkip() {
             window.loadedScript = true;
-            windoww.loadedScript = true; //doesnt work
+            window.loadedScript = true; //doesnt work
         };
         createSelector("superModLoad", () => {
             fixSkip();
@@ -45535,7 +45535,7 @@
         });
     };
 
-    windoww._gaUserPrefs = {
+    window._gaUserPrefs = {
         ioo() {
             return true;
         }
