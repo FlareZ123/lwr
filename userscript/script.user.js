@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Lift Web Restrictions: .io Game Mods (MooMoo.io/Krunker.io/...), Ad Link Bypasser, Adblock, &MORE!
 // @namespace    idk, idc
-// @version      12.5
+// @version      12.7
 // @description  A huge userscript that modifies hundreds of websites, adding mods, hacks, new features, and quality-of-life to the web! (in beta) Notable features: auto-redirects and bypasses linkvertise, a fully-featured MooMoo.io hack, Google Classroom dark mode, mass delete discord messages, remove ads on baidu, disable Google Analytics, Facebook Adblocker!
 // @author       LWR Development Team + code from: Eugene Nouvellieu, ThaCheeseBun, Cazka
 
@@ -11,8 +11,6 @@
 
 // @match        https://facebook.com/*
 // @match        https://*.facebook.com/*
-
-// @include      /[\s\S]*/
 
 // @match        *://starve.io/*
 
