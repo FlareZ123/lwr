@@ -4,9 +4,9 @@
     "description": "A simple, easy to use extension that removes most web annoyances: ads, cookie banners, etc. It also enhances some online games by introducing mods into them, and more!",
     "version": "0.0.1",
     "icons": {
-        "16": "logo/logo-16.png",
-        "48": "logo/logo-48.png",
-        "128": "logo/logo-128.png"
+        "16": "logo/sw16.png",
+        "48": "logo/sw48.png",
+        "128": "logo/sw128.png"
     },
     "options_page": "settings/settings.html",
     "action": {
