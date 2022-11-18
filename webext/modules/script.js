@@ -45543,9 +45543,16 @@ const EXEC = (() => {
 });
 
 const fireHooks = new Map([
-    [0, EXEC],
-    [1, () => {}],
-    [2, () => {}]
+    [0, () => {
+        console.log("hk0");
+        EXEC.apply(undefined);
+    }],
+    [1, () => {
+        console.log("hk1");
+    }],
+    [2, () => {
+        console.log("hk2");
+    }]
 ]);
 let swsInt = setInterval(()=>{
     if (window.document) {
