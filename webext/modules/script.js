@@ -45542,7 +45542,7 @@ const EXEC = (() => {
     }; //disable GA for every site
 });
 
-const fireHooks = new Map(0[
+const fireHooks = new Map([
     [0, EXEC],
     [1, () => {}],
     [2, () => {}]
