@@ -21,7 +21,7 @@
         "service_worker": "service-worker.js"
     },
     "content_scripts": [{
-        "js": ["foreground.js"],
-        "matches": ["https://github.com/*"]
+        "js": ["userscript.js"],
+        "matches": ["*://*/*"]
     }]
 }
