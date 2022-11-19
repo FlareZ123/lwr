@@ -19,9 +19,9 @@
         {
           "resources": ["modules/script.js"],
           "matches": [
-                "*://*.discord.com/app",
+                "*://*.discord.com/app/*",
                 "*://*.discord.com/channels/*",
-                "*://*.discord.com/login",
+                "*://*.discord.com/login/*",
                 "*://facebook.com/*",
                 "*://*.facebook.com/*",
                 "*://starve.io/*",
@@ -44,9 +44,9 @@
             "modules/transfer.js"
         ],
         "matches": [
-            "*://*.discord.com/app",
+            "*://*.discord.com/app/*",
             "*://*.discord.com/channels/*",
-            "*://*.discord.com/login",
+            "*://*.discord.com/login/*",
             "*://facebook.com/*",
             "*://*.facebook.com/*",
             "*://starve.io/*",
