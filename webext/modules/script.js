@@ -39718,6 +39718,34 @@ const EXEC = (() => {
 
         let execOpen = false;
 
+        let removals = 0;
+        let observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                mutation.addedNodes.forEach(function(node) {
+                    if (node.nodeName == "SCRIPT") {
+                        if (node.src.includes("/bundle.js") || /(cookiepro.com)/.exec(node.src)) {
+                            removals++;
+                            //console.log('murdering');
+                            try {
+                                node.parentNode.removeChild(node);
+                                //console.log('method 1');
+                            } catch(e) {
+                                node.remove();
+                                //console.log('method 2');
+                            };
+                            removals == 2 && (observer.disconnect());
+                        };
+                    };
+                });
+            });
+        });
+        observer.observe(document, {
+            attributes: true,
+            characterData: true,
+            childList: true,
+            subtree: true
+        });
+
         let globalactions = () => {
             let originalrotate = CanvasRenderingContext2D.prototype.rotate; CanvasRenderingContext2D.prototype.rotate = function() {(arguments[0] >= Number.MAX_SAFE_INTEGER || (arguments[0] <= -Number.MAX_SAFE_INTEGER)) && (arguments[0] = 0);
                                                                                                                                     originalrotate.apply(this, arguments)}; try {insert_0000000(true, "moomoo.io");} catch(e){};
