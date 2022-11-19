@@ -42497,7 +42497,7 @@ const EXEC = (() => {
                             */
 
                                 let ytcheck = setInterval(()=>{
-                                    if (!!window.YT.Player) {
+                                    if (!!window.YT && !!window.YT.Player) {
                                         clearInterval(ytcheck);
                                         var player;
                                         player = new window.YT.Player('adCard', {
