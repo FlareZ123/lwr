@@ -16,12 +16,8 @@
 let int;
 
 function checkTick() {
-    if (document) {
-        if (document.body) {
-            injectScript(chrome.runtime.getURL('modules/script.js'), 'body');
-            clearInterval(int);
-        };
-    };
+    injectScript(chrome.runtime.getURL('modules/script.js'), 'body');
+    clearInterval(int);
 };
 
 int = setInterval(checkTick, 0);
