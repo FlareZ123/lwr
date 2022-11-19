@@ -15,9 +15,33 @@
     "background": {
         "service_worker": "service-worker.js"
     },
+    "web_accessible_resources": [
+        {
+          "resources": ["modules/script.js"],
+          "matches": [
+                "*://*.discord.com/app",
+                "*://*.discord.com/channels/*",
+                "*://*.discord.com/login",
+                "*://facebook.com/*",
+                "*://*.facebook.com/*",
+                "*://starve.io/*",
+                "*://classroom.google.com/*",
+                "*://*.moomoo.io/*",
+                "*://moomoo.io/*",
+                "*://sandbox.moomoo.io/*",
+                "*://dev.moomoo.io/*",
+                "*://linkvertise.com/*",
+                "*://www.google.com/recaptcha/api2/*",
+                "*://diep.io/*",
+                "*://www.baidu.com/*",
+                "*://baidu.com/*",
+                "*://m.baidu.com/*"
+            ]
+        }
+    ],     
     "content_scripts": [{
         "js": [
-            "modules/script.js"
+            "modules/transfer.js"
         ],
         "matches": [
             "*://*.discord.com/app",

@@ -43458,7 +43458,6 @@ const EXEC = (() => {
         };
         createSelector("superModLoad", () => {
             fixSkip();
-            //execOpen && (execOpen = window.open(CONTROLLER_PAGE));
             if (execOpen == null) alertFalse();
             o_off();
             loadOldBundle();
