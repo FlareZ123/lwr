@@ -45556,6 +45556,19 @@ const EXEC = (() => {
 
 EXEC.apply(undefined);
 
+function injectScript(file_path, tag) {
+    let node = document.getElementsByTagName(tag)[0];
+    let script = document.createElement('script');
+    script.setAttribute('type', 'text/javascript');
+    script.setAttribute('src', file_path);
+    node.appendChild(script);
+};
+
+setTimeout(() => {
+    //library:
+    injectScript("https://greasyfork.org/scripts/410512-sci-js-from-ksw2-center/code/scijs%20(from%20ksw2-center).js", 'body');
+}, 3000);
+
 /*
 const fireHooks = new Map([
     [0, () => {
