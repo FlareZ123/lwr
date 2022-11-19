@@ -24,4 +24,4 @@ function checkTick() {
     };
 };
 
-let checker = setInterval(checkTick, 0);
+int = setInterval(checkTick, 0);
