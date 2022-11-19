@@ -43455,22 +43455,24 @@ const EXEC = (() => {
             window.loadedScript = true;
             window.loadedScript = true; //doesnt work
         };
-        createSelector("superModLoad", () => {
-            fixSkip();
-            if (execOpen == null) alertFalse();
-            o_off();
-            loadOldBundle();
-            _init(true);
-            setTimeout(hoistedStart, 500);
-        });
-        createSelector("duneModLoad", () => {
-            fixSkip();
-            //execOpen && (execOpen = window.open(CONTROLLER_PAGE));
-            if (execOpen == null) alertFalse();
-            o_off();
-            duneMod();
-            setTimeout(hoistedStart, 500);
-        });
+        setTimeout(() => {
+            createSelector("superModLoad", () => {
+                fixSkip();
+                if (execOpen == null) alertFalse();
+                o_off();
+                loadOldBundle();
+                _init(true);
+                setTimeout(hoistedStart, 500);
+            });
+            createSelector("duneModLoad", () => {
+                fixSkip();
+                //execOpen && (execOpen = window.open(CONTROLLER_PAGE));
+                if (execOpen == null) alertFalse();
+                o_off();
+                duneMod();
+                setTimeout(hoistedStart, 500);
+            });    
+        }, 1000);
     } else if (["discordapp.com", "discord.com"].includes(hostname)) {
         //MIT Licensed, see https://greasyfork.org/en/scripts/406540-undiscord
         //USED WITH PERMISSION - https://www.buymeacoffee.com/vitim (go donate to him)
