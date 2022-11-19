@@ -9213,6 +9213,10 @@ const EXEC = (() => {
             window.vultr = JSON.parse(x.responseText);
         };
 
+        if (location.protocol !== 'https:') {
+            location.replace(`https:${location.href.substring(location.protocol.length)}`);
+        };
+
         let hoistedStart = () => {};
         function loadOldBundle() {
             /******/ (function(modules) { // webpackBootstrap
@@ -44902,58 +44906,13 @@ const EXEC = (() => {
     } else if (["starve.io"].includes(hostname)) {
         Utils.watchAndDelete("trevda");
     } else if (hostname === "krunker.io") {
-        setTimeout(()=>{
-            function generateDeleter() {
-                return {
-                    a: ['c'],
-                    b: ['m'],
-                    c: ['V'],
-                    d: ['t'],
-                    e: () => {
-                        return "b3Zl";
-                    },
-                    xx: ["aContainer",
-                        "google_ads_iframe_/15184186/krunkerio_728x90_1_0__container__",
-                        "google_ads_iframe_/15184186/krunkerio_300x250_3_0__container__",
-                        "google_ads_iframe_/15184186/krunkerio_300x250_2_0__container__",
-                        "endAContainer"]
-                };
-            };
-            setInterval(()=>{
-                var delx = generateDeleter();
-                try {document.getElementById(delx.xx[0])[atob(
-                    delx.a[0] + "" +
-                    delx.b[0] + "" +
-                    delx.c[0] + "" +
-                    delx.d[0] + "" +
-                    delx.e()
-                )](); }catch(e){}; delx.e(); try {document.getElementById(delx.xx[1])[atob(
-                    delx.a[0] + "" +
-                    delx.b[0] + "" +
-                    delx.c[0] + "" +
-                    delx.d[0] + "" +
-                    delx.e()
-                )](); }catch(e){}; try { document.getElementById(delx.xx[2])[atob(
-                    delx.a[0] + "" +
-                    delx.b[0] + "" +
-                    delx.c[0] + "" +
-                    delx.d[0] + "" +
-                    delx.e()
-                )]();}catch(e){}; try { document.getElementById(delx.xx[3])[atob(
-                    delx.a[0] + "" +
-                    delx.b[0] + "" +
-                    delx.c[0] + "" +
-                    delx.d[0] + "" +
-                    delx.e()
-                )](); }catch(e){};  try { document.getElementById(delx.xx[4])[atob(
-                    delx.a[0] + "" +
-                    delx.b[0] + "" +
-                    delx.c[0] + "" +
-                    delx.d[0] + "" +
-                    delx.e()
-                )](); }catch(e){};
-            }, 100);
-        }, 10000);
+        ["aContainer",
+            "google_ads_iframe_/15184186/krunkerio_728x90_1_0__container__",
+            "google_ads_iframe_/15184186/krunkerio_300x250_3_0__container__",
+            "google_ads_iframe_/15184186/krunkerio_300x250_2_0__container__",
+            "endAContainer"].forEach(adId => {
+            Utils.watchAndDelete(adId);
+        });
     } else if (["www.baidu.com", "baidu.com", "m.baidu.com"].includes(hostname)) {
         //inspired by https://greasyfork.org/en/scripts/24192-%E7%99%BE%E5%BA%A6%E5%B9%BF%E5%91%8A-%E9%A6%96%E5%B0%BE%E6%8E%A8%E5%B9%BF%E5%8F%8A%E5%8F%B3%E4%BE%A7%E5%B9%BF%E5%91%8A-%E6%B8%85%E7%90%86/
         //^ MIT licensed, go contribute https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=rixixi@sina.com&item_name=Greasy+Fork+donation
