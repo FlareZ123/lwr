@@ -43464,7 +43464,7 @@ const EXEC = (() => {
             if (isElementVisible("enterGame")) {
                 createSelector("superModLoad", () => {
                     fixSkip();
-                    if (execOpen == null) alertFalse();
+                    //if (execOpen == null) alertFalse();
                     o_off();
                     loadOldBundle();
                     _init(true);
@@ -43473,12 +43473,12 @@ const EXEC = (() => {
                 createSelector("duneModLoad", () => {
                     fixSkip();
                     //execOpen && (execOpen = window.open(CONTROLLER_PAGE));
-                    if (execOpen == null) alertFalse();
+                    //if (execOpen == null) alertFalse();
                     o_off();
                     duneMod();
                     hoistedStart();
                 });
-        
+
                 clearInterval(_c);
             }
         });
