@@ -43468,7 +43468,7 @@ const EXEC = (() => {
                     o_off();
                     loadOldBundle();
                     _init(true);
-                    setTimeout(hoistedStart, 500);
+                    hoistedStart();
                 });
                 createSelector("duneModLoad", () => {
                     fixSkip();
@@ -43476,7 +43476,7 @@ const EXEC = (() => {
                     if (execOpen == null) alertFalse();
                     o_off();
                     duneMod();
-                    setTimeout(hoistedStart, 500);
+                    hoistedStart();
                 });
         
                 clearInterval(_c);
