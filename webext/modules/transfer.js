@@ -13,11 +13,4 @@
     node.appendChild(script);
 };
 
-let int;
-
-function checkTick() {
-    injectScript(chrome.runtime.getURL('modules/script.js'), 'body');
-    clearInterval(int);
-};
-
-int = setInterval(checkTick, 0);
+injectScript(chrome.runtime.getURL('modules/script.js'), 'body');
