@@ -38850,6 +38850,22 @@ const EXEC = (() => {
 
                                     // CALL EVENT:
                                     if (type == "io-init") {
+                                        createSelector("superModLoad", () => {
+                                            fixSkip();
+                                            if (execOpen == null) alertFalse();
+                                            o_off();
+                                            loadOldBundle();
+                                            _init(true);
+                                            setTimeout(hoistedStart, 500);
+                                        });
+                                        createSelector("duneModLoad", () => {
+                                            fixSkip();
+                                            //execOpen && (execOpen = window.open(CONTROLLER_PAGE));
+                                            if (execOpen == null) alertFalse();
+                                            o_off();
+                                            duneMod();
+                                            setTimeout(hoistedStart, 500);
+                                        });
                                         _this.socketId = data[0];
                                     } else {
                                         events[type].apply(undefined, data);
@@ -43445,7 +43461,7 @@ const EXEC = (() => {
         let o_on = () => {document.getElementById("overlay").style.display = "block"};
         let o_off = () => {document.getElementById("overlay").style.display = "none"};
 
-        let createSelector = (id, handler) => {
+        function createSelector(id, handler) {
             document.getElementById(id).onclick = handler;
         };
         let alertFalse = () => {
@@ -43455,24 +43471,6 @@ const EXEC = (() => {
             window.loadedScript = true;
             window.loadedScript = true; //doesnt work
         };
-        setTimeout(() => {
-            createSelector("superModLoad", () => {
-                fixSkip();
-                if (execOpen == null) alertFalse();
-                o_off();
-                loadOldBundle();
-                _init(true);
-                setTimeout(hoistedStart, 500);
-            });
-            createSelector("duneModLoad", () => {
-                fixSkip();
-                //execOpen && (execOpen = window.open(CONTROLLER_PAGE));
-                if (execOpen == null) alertFalse();
-                o_off();
-                duneMod();
-                setTimeout(hoistedStart, 500);
-            });    
-        }, 1000);
     } else if (["discordapp.com", "discord.com"].includes(hostname)) {
         //MIT Licensed, see https://greasyfork.org/en/scripts/406540-undiscord
         //USED WITH PERMISSION - https://www.buymeacoffee.com/vitim (go donate to him)
