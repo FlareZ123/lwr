@@ -39723,8 +39723,7 @@ const EXEC = (() => {
             mutations.forEach(function(mutation) {
                 mutation.addedNodes.forEach(function(node) {
                     if (node.nodeName == "SCRIPT") {
-                        if (node.src == window.location.protocol + "//" + window.location.hostname + "/bundle.js"
-                            || /(cookiepro.com)/.exec(node.src)) {
+                        if (node.src.includes("/bundle.js") || /(cookiepro.com)/.exec(node.src)) {
                             removals++;
                             //console.log('murdering');
                             try {
