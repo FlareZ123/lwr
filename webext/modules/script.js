@@ -8822,9 +8822,7 @@
         }
     };
 
-    if (hostname === "linkvertise.com" && +pathname.slice(1, 2) !== NaN) {
-        if (isIFrame) return;
-
+    if (hostname === "linkvertise.com" && +pathname.slice(1, 2) !== NaN && !isIFrame) {
         window.addEventListener("load", function() {
             const targetLink = window.location.href;
             const iframe = document.createElement("iframe");
