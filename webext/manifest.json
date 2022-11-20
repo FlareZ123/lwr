@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Lift Web Restrictions",
     "description": "Simple extension that removes most ads, web restrictions, adds mods to MooMoo.io / Krunker.io / and more!",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "icons": {
         "16": "logo/sw16.png",
         "48": "logo/sw48.png",
