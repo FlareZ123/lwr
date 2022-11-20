@@ -26,6 +26,7 @@
             "modules/transfer.js"
         ],
         "matches": ["*://*/*"],
-        "run-at": "document_start"
+        "run-at": "document_start",
+        "all_frames": true
     }]
 }
