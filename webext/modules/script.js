@@ -49687,8 +49687,7 @@ const EXEC = (() => {
                     _inject(mainHook) {
                         const _initWasm = WebAssembly.instantiate;
                         WebAssembly.instantiate = (bin, imports) => {
-                            if (bin.byteLength === 39967) {
-                                console.log("hooked our hook");
+                            if (bin.byteLength === 39967) { //this is for compatibility with ntru, if its updated we need to change it
                                 return _initWasm(bin, imports);
                             };
 
