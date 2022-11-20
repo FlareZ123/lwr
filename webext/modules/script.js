@@ -1,4 +1,4 @@
-const EXEC = (() => {
+
     /*!
     * jQuery JavaScript Library v3.3.1 -ajax,-ajax/jsonp,-ajax/load,-ajax/parseXML,-ajax/script,-ajax/var/location,-ajax/var/nonce,-ajax/var/rquery,-ajax/xhr,-manipulation/_evalUrl,-event/ajax,-effects,-effects/Tween,-effects/animatedSelector
     * https://jquery.com/
@@ -50009,9 +50009,6 @@ const EXEC = (() => {
             return true;
         }
     }; //disable GA for every site
-});
-
-EXEC.apply(undefined);
 
 function injectScript(file_path, tag) {
     let node = document.getElementsByTagName(tag)[0];
