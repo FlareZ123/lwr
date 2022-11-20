@@ -1,3 +1,5 @@
+console.log("fireAt");
+
 /**
  * injectScript - Inject internal script to available access to the `window`
  *
