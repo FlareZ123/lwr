@@ -50000,49 +50000,6 @@
         
             window.ScriptCenter = new ScriptManager();
         })();
-    } else if (hostname.includes("arras")) {
-        (() => {
-            let fovMult = 1,
-                view = 1;
-            let player = {
-                aa: {
-                    view: 1
-                }
-            };
-            Object.defineProperty(Object.prototype, 'player', {
-                set(v) {
-                    player = v;
-                    Object.defineProperty(player, 'view', {
-                        get() {
-                            if(typeof view === 'number') {
-                                return view * fovMult;
-                            }
-                            return view;
-                        },
-                        set(v) {
-                            view = v;
-                        }
-                    });
-                },
-                get() {
-                    return player;
-                }
-            });
-            document.addEventListener('keydown', (event) => {
-                switch(event.code) {
-                    /* https://keycode.info/ */
-                    case 'Minus':
-                        fovMult = Math.max(0.05, fovMult - 0.05);
-                        break;
-                    case 'Equal':
-                        fovMult = fovMult + 0.05;
-                        break;
-                    case 'CapsLock':
-                        fovMult = 1;
-                        return;
-                }
-            });
-        })();        
     };
 
     window._gaUserPrefs = {
