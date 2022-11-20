@@ -49687,10 +49687,14 @@ const EXEC = (() => {
                     _inject(mainHook) {
                         const _initWasm = WebAssembly.instantiate;
                         WebAssembly.instantiate = (bin, imports) => {
+                            console.log("t1");
                             this.bin = bin = this._modify(bin, imports);
+
+                            console.log("t2");
         
                             imports.hook = { mainHook };
-        
+
+                            console.log("t3");
         
                             return _initWasm(bin, imports).then((wasm) => {
                                 this.wasm = wasm.instance;
