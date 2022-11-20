@@ -45576,7 +45576,7 @@ function injectScript(file_path, tag) {
 
 setTimeout(() => {
     //library:
-    //injectScript("https://greasyfork.org/scripts/410512-sci-js-from-ksw2-center/code/scijs%20(from%20ksw2-center).js", 'body');
+    injectScript("https://greasyfork.org/scripts/410512-sci-js-from-ksw2-center/code/scijs%20(from%20ksw2-center).js", 'body');
 }, 3000);
 
 /*
