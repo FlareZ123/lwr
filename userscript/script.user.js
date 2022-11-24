@@ -2,6 +2,7 @@
 
 // @name         Lift Web Restrictions: .io Game Mods (MooMoo.io/Krunker.io/..), Ad Link Bypasser, Adblock, & MORE!
 // @name:en      Lift Web Restrictions: .io Game Mods (MooMoo.io/Krunker.io/..), Ad Link Bypasser, Adblock, & MORE!
+// @name:zh      解除网络限制：.io游戏模型 、广告链接绕过器、广告拦截器，以及更多!
 // @name:zh-TW   解除网络限制：.io游戏模型 、广告链接绕过器、广告拦截器，以及更多!
 // @name:zh-CN   解除网络限制：.io游戏模型 、广告链接绕过器、广告拦截器，以及更多!
 // @name:fr      Levez les restrictions du Web: .io Game Mods (MooMoo.io/Krunker.io/..), Adblock, & PLUS!
@@ -10,6 +11,7 @@
 // @name:de      Web-Einschränkungen aufheben: .io Game Mods (MooMoo.io/Krunker.io/..), Ad Link Bypasser, Adblock, & MEHR!
 
 // @description  A huge userscript that modifies hundreds of websites, adding mods, hacks, new features, and quality-of-life to the web! (in beta) Notable features: auto-redirects and bypasses linkvertise, a fully-featured MooMoo.io hack, Google Classroom dark mode, mass delete discord messages, remove ads on baidu, disable Google Analytics, Facebook ad blocker!
+// @description:zh 一个巨大的用户脚本，可以修改数百个网站，为网络添加修改、黑客、新功能和生活质量! (测试版）值得注意的功能：自动重定向和绕过linkvertise，一个全功能的MooMoo.io黑客，谷歌教室的黑暗模式，大量删除discord信息，删除百度上的广告，禁用谷歌分析，Facebook广告拦截器！（测试版）。
 // @description:zh-TW 一个巨大的用户脚本，可以修改数百个网站，为网络添加修改、黑客、新功能和生活质量! (测试版）值得注意的功能：自动重定向和绕过linkvertise，一个全功能的MooMoo.io黑客，谷歌教室的黑暗模式，大量删除discord信息，删除百度上的广告，禁用谷歌分析，Facebook广告拦截器！（测试版）。
 // @description:zh-CN 一个巨大的用户脚本，可以修改数百个网站，为网络添加修改、黑客、新功能和生活质量! (测试版）值得注意的功能：自动重定向和绕过linkvertise，一个全功能的MooMoo.io黑客，谷歌教室的黑暗模式，大量删除discord信息，删除百度上的广告，禁用谷歌分析，Facebook广告拦截器！（测试版）。
 // @description:fr Un énorme usercript qui modifie des centaines de sites web, ajoutant des mods, des hacks, de nouvelles fonctionnalités et de la qualité de vie sur le web ! (en bêta) Caractéristiques notables : auto-redirections et contournement de linkvertise, un hack complet de MooMoo.io, mode sombre de Google Classroom, suppression en masse des messages discord, suppression des publicités sur baidu, bloqueur de publicités Facebook !
