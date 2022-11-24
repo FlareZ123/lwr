@@ -8,7 +8,7 @@
 // @name:fr      Levez les restrictions du Web: .io Game Mods (MooMoo.io/Krunker.io/..), Adblock, & PLUS!
 // @name:ja      ウェブ規制解除： .ioゲームMOD（MooMoo.io/Krunker.io/...）、広告リンク回避、Adblock、その他多数!
 // @name:ru      Снятие веб-ограничений: .io Game Mods (MooMoo.io/Krunker.io/...), Ad Link Bypasser, Adblock, & MORE!
-// @name:de      Web-Einschränkungen aufheben: .io Game Mods (MooMoo.io/Krunker.io/..), Ad Link Bypasser, Adblock, & MEHR!
+// @name:de      Web-Einschränkungen aufheben: .io Game Mods (MooMoo.io/Krunker.io/..), Adblock, & MEHR!
 
 // @description  A huge userscript that modifies hundreds of websites, adding mods, hacks, new features, and quality-of-life to the web! (in beta) Notable features: auto-redirects and bypasses linkvertise, a fully-featured MooMoo.io hack, Google Classroom dark mode, mass delete discord messages, remove ads on baidu, disable Google Analytics, Facebook ad blocker!
 // @description:zh 一个巨大的用户脚本，可以修改数百个网站，为网络添加修改、黑客、新功能和生活质量! (测试版）值得注意的功能：自动重定向和绕过linkvertise，一个全功能的MooMoo.io黑客，谷歌教室的黑暗模式，大量删除discord信息，删除百度上的广告，禁用谷歌分析，Facebook广告拦截器！（测试版）。
