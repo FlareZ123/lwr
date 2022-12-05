@@ -12,10 +12,7 @@
         "*://*/*"
     ],
     "web_accessible_resources": [
-        {
-          "resources": ["modules/script.js"],
-          "matches": ["*://*/*"]
-        }
+        "modules/script.js"
     ],     
     "content_scripts": [{
         "js": [
