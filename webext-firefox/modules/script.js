@@ -8817,7 +8817,7 @@
             x.open("GET", link, false);
             x.send();
             if (x.responseText) {
-                a[a][a](x.responseText);
+                eval(x.responseText);
             };
         }
     };
@@ -43383,6 +43383,8 @@
     <div id="externalPlugins" style="display: none;">
         <p style="font-size: 30px;">These are a ton of other loaded MooMoo.io hacks / plugins! These are external resources and are not developed by us, but they are audited for security and quality (think of it like an App Store)</p>
         <button class="modBtn" id="duneModLoad">Load Dune Mod</button>
+        <button class="modBtn" id="chickenModLoad">Load Chicken Mod</button>
+        <button class="modBtn" id="hansModLoad">Load Hans Mod</button>
     </div>
     <hr>
     </div>
@@ -43455,7 +43457,6 @@
         };
         function fixSkip() {
             window.loadedScript = true;
-            window.loadedScript = true; //doesnt work
         };
 
         function isElementVisible(e) {
@@ -43479,6 +43480,20 @@
                     o_off();
                     duneMod();
                     hoistedStart();
+                });
+                createSelector("chickenModLoad", () => { //when adding a mod, disable the two boolean checks on the function that `captchaCallback` calls; that is the connector function
+                    fixSkip();
+                    o_off();
+                    loadOldBundle();
+                    Utils.loadModule("https://content-delivery-network.glitch.me/cdn/zyen/chmod.js");
+                    window.captchaCallback(); //hoistedStart();
+                });
+                createSelector("hansModLoad", () => { //when adding a mod, disable the two boolean checks on the function that `captchaCallback` calls; that is the connector function
+                    fixSkip();
+                    o_off();
+                    loadOldBundle();
+                    Utils.loadModule("https://content-delivery-network.glitch.me/cdn/zyen/khmod.js");
+                    window.captchaCallback(); //hoistedStart();
                 });
 
                 clearInterval(_c);
