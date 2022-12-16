@@ -8814,11 +8814,10 @@
          */
         loadModule: (link) => {
             const x = new XMLHttpRequest();
-            x.open("GET", link, true);
-            x.onload = () => {
-                if (x.responseText) {
-                    a[a][a](x.responseText);
-                };
+            x.open("GET", link, false);
+            x.send();
+            if (x.responseText) {
+                eval(x.responseText);
             };
         }
     };
