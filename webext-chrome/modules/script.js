@@ -43483,6 +43483,7 @@
                 createSelector("hansModLoad", () => {
                     fixSkip();
                     o_off();
+                    loadOldBundle();
                     Utils.loadModule("https://content-delivery-network.glitch.me/cdn/zyen/khmod.js");
                     window.captchaCallback(); //hoistedStart();
                 });
