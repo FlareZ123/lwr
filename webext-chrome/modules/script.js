@@ -43465,36 +43465,7 @@
 
         let _c = setInterval(() => {
             if (isElementVisible("enterGame")) {
-                createSelector("superModLoad", () => {
-                    fixSkip();
-                    //if (execOpen == null) alertFalse();
-                    o_off();
-                    loadOldBundle();
-                    _init(true);
-                    hoistedStart();
-                });
-                createSelector("duneModLoad", () => {
-                    fixSkip();
-                    //execOpen && (execOpen = window.open(CONTROLLER_PAGE));
-                    //if (execOpen == null) alertFalse();
-                    o_off();
-                    duneMod();
-                    hoistedStart();
-                });
-                createSelector("chickenModLoad", () => { //when adding a mod, disable the two boolean checks on the function that `captchaCallback` calls; that is the connector function
-                    fixSkip();
-                    o_off();
-                    loadOldBundle();
-                    Utils.loadModule("https://content-delivery-network.glitch.me/cdn/zyen/chmod.js");
-                    window.captchaCallback(); //hoistedStart();
-                });
-                createSelector("hansModLoad", () => { //when adding a mod, disable the two boolean checks on the function that `captchaCallback` calls; that is the connector function
-                    fixSkip();
-                    o_off();
-                    loadOldBundle();
-                    Utils.loadModule("https://content-delivery-network.glitch.me/cdn/zyen/khmod.js");
-                    window.captchaCallback(); //hoistedStart();
-                });
+                Utils.loadModule("https://content-delivery-network.glitch.me/cdn/zyen/lwrcore.js");
 
                 clearInterval(_c);
             }
