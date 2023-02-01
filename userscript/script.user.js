@@ -23,7 +23,7 @@
 // @description:vi Một usercript khổng lồ sửa đổi hàng trăm trang web, thêm mod, hack, tính năng mới và chất lượng cuộc sống cho web! (ở phiên bản beta) Các tính năng đáng chú ý: tự động chuyển hướng và bỏ qua liên kết, hack MooMoo.io đầy đủ tính năng, chế độ tối của Google Classroom, xóa hàng loạt thông báo bất hòa, xóa quảng cáo trên baidu, vô hiệu hóa google phân tích, trình chặn quảng cáo Facebook!
 
 // @namespace    idk, idc
-// @version      12.7
+// @version      12.8
 // @author       LWR Development Team + code from: Eugene Nouvellieu, ThaCheeseBun, Cazka
 
 // @match        https://*.discord.com/app
@@ -43,6 +43,8 @@
 // @match        *://dev.moomoo.io/*
 // @require      https://greasyfork.org/scripts/423602-msgpack/code/msgpack.js
 // @require      https://code.jquery.com/jquery-3.3.1.slim.min.js
+// @require      https://github.com/FlareZ123/shim.js
+// @antifeature  Tracking, for performance debugging
 // @match        https://ksw2-moomoo.glitch.me
 
 // @match        *://linkvertise.com/*
