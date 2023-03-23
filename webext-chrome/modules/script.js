@@ -9204,6 +9204,14 @@
         });
     } else if (["moomoo.io", "dev.moomoo.io", "sandbox.moomoo.io"].includes(hostname)) {
 
+        const m = setInterval(() => {
+            try {
+                document.getElementById("adCard").remove();
+                Array.from(document.getElementsByClassName("adsbygoogle")).forEach(e => e.remove());
+            } catch(e){};
+        }, 3000);
+        setTimeout(clearInterval, 60000, m);
+
         const x = new XMLHttpRequest();
         x.open("GET", "/serverData", false);
         x.send();
@@ -44920,6 +44928,7 @@
         Utils.watchAndDelete("trevda");
     } else if (hostname === "krunker.io") {
         ["aContainer",
+            "streamContainer",
             "google_ads_iframe_/15184186/krunkerio_728x90_1_0__container__",
             "google_ads_iframe_/15184186/krunkerio_300x250_3_0__container__",
             "google_ads_iframe_/15184186/krunkerio_300x250_2_0__container__",
