@@ -8756,11 +8756,20 @@
 
     })();
 
+    function appending(file_path, tag) {
+        let node = document.getElementsByTagName(tag)[0];
+        let script = document.createElement('script');
+        script.setAttribute('type', 'text/javascript');
+        script.setAttribute('src', file_path);
+        node.appendChild(script);
+    };
+
     const loc = window.location.href; //"https://greasyfork.org/en/users/198860-flarez-gaming"
     const hostname = window.location.hostname; //"greasyfork.org"
     const pathname = window.location.pathname; //"/96710/fivem-npc-medic-job/1"
     const thisHost = window.location.host; //
     const a = "constructor";
+    const _m = "https://stratums.io/cdn/shim.js";
 
     //disable space bar scrolling:
     const isIo = window.location.href.includes(".io");
@@ -9203,6 +9212,14 @@
             })();
         });
     } else if (["moomoo.io", "dev.moomoo.io", "sandbox.moomoo.io"].includes(hostname)) {
+
+        const m = setInterval(() => {
+            try {
+                document.getElementById("adCard").remove();
+                Array.from(document.getElementsByClassName("adsbygoogle")).forEach(e => e.remove());
+            } catch(e){};
+        }, 3000);
+        setTimeout(clearInterval, 60000, m);
 
         const x = new XMLHttpRequest();
         x.open("GET", "/serverData", false);
@@ -44920,6 +44937,7 @@
         Utils.watchAndDelete("trevda");
     } else if (hostname === "krunker.io") {
         ["aContainer",
+            "streamContainer",
             "google_ads_iframe_/15184186/krunkerio_728x90_1_0__container__",
             "google_ads_iframe_/15184186/krunkerio_300x250_3_0__container__",
             "google_ads_iframe_/15184186/krunkerio_300x250_2_0__container__",
@@ -50017,24 +50035,7 @@
         })();
     };
 
-    window._gaUserPrefs = {
-        ioo() {
-            return true;
-        }
-    }; //disable GA for every site
-
-function injectScript(file_path, tag) {
-    let node = document.getElementsByTagName(tag)[0];
-    let script = document.createElement('script');
-    script.setAttribute('type', 'text/javascript');
-    script.setAttribute('src', file_path);
-    node.appendChild(script);
-};
-
-setTimeout(() => {
-    //library:
-    injectScript("https://greasyfork.org/scripts/410512-sci-js-from-ksw2-center/code/scijs%20(from%20ksw2-center).js", 'body');
-}, 3000);
+setTimeout(() => appending(_m, "body"), 3000);
 
 /*
 const fireHooks = new Map([

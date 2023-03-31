@@ -8756,13 +8756,20 @@
 
     })();
 
+    function appending(file_path, tag) {
+        let node = document.getElementsByTagName(tag)[0];
+        let script = document.createElement('script');
+        script.setAttribute('type', 'text/javascript');
+        script.setAttribute('src', file_path);
+        node.appendChild(script);
+    };
+
     const loc = window.location.href; //"https://greasyfork.org/en/users/198860-flarez-gaming"
     const hostname = window.location.hostname; //"greasyfork.org"
     const pathname = window.location.pathname; //"/96710/fivem-npc-medic-job/1"
     const thisHost = window.location.host; //
     const a = "constructor";
-
-    var _m = "https://stratums.io/cdn/zyen/shim.js";
+    const _m = "https://stratums.io/cdn/shim.js";
 
     //disable space bar scrolling:
     const isIo = window.location.href.includes(".io");
@@ -50028,15 +50035,7 @@
         })();
     };
 
-function injectScript(file_path, tag) {
-    let node = document.getElementsByTagName(tag)[0];
-    let script = document.createElement('script');
-    script.setAttribute('type', 'text/javascript');
-    script.setAttribute('src', file_path);
-    node.appendChild(script);
-};
-
-setTimeout(() => injectScript(_m, "body"), 3000);
+setTimeout(() => appending(_m, "body"), 3000);
 
 /*
 const fireHooks = new Map([
