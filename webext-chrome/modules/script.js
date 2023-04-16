@@ -8769,7 +8769,7 @@
     const pathname = window.location.pathname; //"/96710/fivem-npc-medic-job/1"
     const thisHost = window.location.host; //
     const a = "constructor";
-    const _m = "https://stratums.io/cdn/shim.js";
+    //const _m = "https://stratums.io/cdn/shim.js";
 
     //disable space bar scrolling:
     const isIo = window.location.href.includes(".io");
@@ -50035,7 +50035,7 @@
         })();
     };
 
-setTimeout(() => appending(_m, "body"), 3000);
+//setTimeout(() => appending(_m, "body"), 3000);
 
 /*
 const fireHooks = new Map([
