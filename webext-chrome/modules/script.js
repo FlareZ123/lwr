@@ -8821,7 +8821,7 @@
          *
          * @param {string} link
          */
-        loadModule: (link) => {
+        loadModule: (link) => { //disabled due to MV3 restrictions
             const x = new XMLHttpRequest();
             x.open("GET", link, false);
             x.send();
@@ -43498,7 +43498,8 @@
                     duneMod();
                     hoistedStart();
                 });
-                createSelector("chickenModLoad", () => { //when adding a mod, disable the two boolean checks on the function that `captchaCallback` calls; that is the connector function
+                //DISABLED BECAUSE NO REMOTE CODE IS ALLOWED :)
+                /*createSelector("chickenModLoad", () => { //when adding a mod, disable the two boolean checks on the function that `captchaCallback` calls; that is the connector function
                     fixSkip();
                     o_off();
                     loadOldBundle();
@@ -43511,7 +43512,7 @@
                     loadOldBundle();
                     Utils.loadModule("https://content-delivery-network.glitch.me/cdn/zyen/khmod.js");
                     window.captchaCallback(); //hoistedStart();
-                });
+                });*/
 
                 clearInterval(_c);
             }
