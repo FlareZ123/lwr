@@ -11,19 +11,19 @@
 // @name:de      Web-Einschränkungen aufheben: .io Game Mods (MooMoo.io/Krunker.io/..), Adblock, & MEHR!
 // @name:vi      Nâng cao các hạn chế trên web: .io Game Mods (MooMoo.io/Krunker.io/ ..), loại bỏ quảng cáo, & THÊM!
 
-// @description  A huge userscript that modifies hundreds of websites, adding mods, hacks, new features, and quality-of-life to the web! (in beta) Notable features: auto-redirects and bypasses linkvertise, a fully-featured MooMoo.io hack, Google Classroom dark mode, mass delete discord messages, remove ads on baidu, disable Google Analytics, Facebook ad blocker!
-// @description:zh 一个巨大的用户脚本，可以修改数百个网站，为网络添加修改、黑客、新功能和生活质量! (测试版）值得注意的功能：自动重定向和绕过linkvertise，一个全功能的MooMoo.io黑客，谷歌教室的黑暗模式，大量删除discord信息，删除百度上的广告，禁用谷歌分析，Facebook广告拦截器！（测试版）。
-// @description:zh-TW 一个巨大的用户脚本，可以修改数百个网站，为网络添加修改、黑客、新功能和生活质量! (测试版）值得注意的功能：自动重定向和绕过linkvertise，一个全功能的MooMoo.io黑客，谷歌教室的黑暗模式，大量删除discord信息，删除百度上的广告，禁用谷歌分析，Facebook广告拦截器！（测试版）。
-// @description:zh-CN 一个巨大的用户脚本，可以修改数百个网站，为网络添加修改、黑客、新功能和生活质量! (测试版）值得注意的功能：自动重定向和绕过linkvertise，一个全功能的MooMoo.io黑客，谷歌教室的黑暗模式，大量删除discord信息，删除百度上的广告，禁用谷歌分析，Facebook广告拦截器！（测试版）。
-// @description:fr Un énorme usercript qui modifie des centaines de sites web, ajoutant des mods, des hacks, de nouvelles fonctionnalités et de la qualité de vie sur le web ! (en bêta) Caractéristiques notables : auto-redirections et contournement de linkvertise, un hack complet de MooMoo.io, mode sombre de Google Classroom, suppression en masse des messages discord, suppression des publicités sur baidu, bloqueur de publicités Facebook !
-// @description:en A huge userscript that modifies hundreds of websites, adding mods, hacks, new features, and quality-of-life to the web! (in beta) Notable features: auto-redirects and bypasses linkvertise, a fully-featured MooMoo.io hack, Google Classroom dark mode, mass delete discord messages, remove ads on baidu, disable Google Analytics, Facebook ad blocker!
-// @description:ja 何百ものウェブサイトを修正し、ウェブにMOD、ハック、新機能、クオリティ・オブ・ライフを追加する巨大なユーザースクリプトです! (ベータ版) 注目の機能：自動リダイレクトとlinkvertiseのバイパス、フル機能のMooMoo.ioハック、Google Classroomダークモード、discordメッセージの大量削除、baidu上の広告の削除、Google Analyticsの無効化、Facebookの広告ブロッカー！(ベータ版)
-// @description:ru Огромный юзерскрипт, который изменяет сотни веб-сайтов, добавляя моды, хаки, новые функции и качество жизни в Интернете! (в бета-версии) Примечательные особенности: автопереадресация и обход linkvertise, полнофункциональный хак MooMoo.io, темный режим Google Classroom, массовое удаление сообщений discord, удаление рекламы на baidu, отключение Google Analytics, блокировщик рекламы Facebook!
-// @description:de Ein riesiges Benutzerskript, das Hunderte von Websites modifiziert, Mods, Hacks, neue Funktionen und Lebensqualität im Web hinzufügt! (in Beta) Bemerkenswerte Funktionen: Automatische Weiterleitung und Umgehung von Linkvertise, ein voll funktionsfähiger MooMoo.io-Hack, dunkler Modus für Google Classroom, Massenlöschung von Discord-Nachrichten, Entfernen von Werbung auf Baidu, Facebook-Werbeblocker!
+// @description  A huge userscript that modifies hundreds of websites, adding mods, hacks, new features, and quality-of-life to the web! (in beta) Notable features: auto-redirects, a fully-featured MooMoo.io hack, Google Classroom dark mode, mass delete discord messages, remove ads on baidu, disable Google Analytics, Facebook ad blocker!
+// @description:zh 一个巨大的用户脚本，可以修改数百个网站，为网络添加修改、黑客、新功能和生活质量! (测试版）值得注意的功能：自动重定向和绕过，一个全功能的MooMoo.io黑客，谷歌教室的黑暗模式，大量删除discord信息，删除百度上的广告，禁用谷歌分析，Facebook广告拦截器！（测试版）。
+// @description:zh-TW 一个巨大的用户脚本，可以修改数百个网站，为网络添加修改、黑客、新功能和生活质量! (测试版）值得注意的功能：自动重定向和绕过，一个全功能的MooMoo.io黑客，谷歌教室的黑暗模式，大量删除discord信息，删除百度上的广告，禁用谷歌分析，Facebook广告拦截器！（测试版）。
+// @description:zh-CN 一个巨大的用户脚本，可以修改数百个网站，为网络添加修改、黑客、新功能和生活质量! (测试版）值得注意的功能：自动重定向和绕过，一个全功能的MooMoo.io黑客，谷歌教室的黑暗模式，大量删除discord信息，删除百度上的广告，禁用谷歌分析，Facebook广告拦截器！（测试版）。
+// @description:fr Un énorme usercript qui modifie des centaines de sites web, ajoutant des mods, des hacks, de nouvelles fonctionnalités et de la qualité de vie sur le web ! (en bêta) Caractéristiques notables : auto-redirections et contournement, un hack complet de MooMoo.io, mode sombre de Google Classroom, suppression en masse des messages discord, suppression des publicités sur baidu, bloqueur de publicités Facebook !
+// @description:en A huge userscript that modifies hundreds of websites, adding mods, hacks, new features, and quality-of-life to the web! (in beta) Notable features: auto-redirects and bypasses, a fully-featured MooMoo.io hack, Google Classroom dark mode, mass delete discord messages, remove ads on baidu, disable Google Analytics, Facebook ad blocker!
+// @description:ja 何百ものウェブサイトを修正し、ウェブにMOD、ハック、新機能、クオリティ・オブ・ライフを追加する巨大なユーザースクリプトです! (ベータ版) 注目の機能：自動リダイレクトとのバイパス、フル機能のMooMoo.ioハック、Google Classroomダークモード、discordメッセージの大量削除、baidu上の広告の削除、Google Analyticsの無効化、Facebookの広告ブロッカー！(ベータ版)
+// @description:ru Огромный юзерскрипт, который изменяет сотни веб-сайтов, добавляя моды, хаки, новые функции и качество жизни в Интернете! (в бета-версии) Примечательные особенности: автопереадресация и обход , полнофункциональный хак MooMoo.io, темный режим Google Classroom, массовое удаление сообщений discord, удаление рекламы на baidu, отключение Google Analytics, блокировщик рекламы Facebook!
+// @description:de Ein riesiges Benutzerskript, das Hunderte von Websites modifiziert, Mods, Hacks, neue Funktionen und Lebensqualität im Web hinzufügt! (in Beta) Bemerkenswerte Funktionen: Automatische Weiterleitung und Umgehung von , ein voll funktionsfähiger MooMoo.io-Hack, dunkler Modus für Google Classroom, Massenlöschung von Discord-Nachrichten, Entfernen von Werbung auf Baidu, Facebook-Werbeblocker!
 // @description:vi Một usercript khổng lồ sửa đổi hàng trăm trang web, thêm mod, hack, tính năng mới và chất lượng cuộc sống cho web! (ở phiên bản beta) Các tính năng đáng chú ý: tự động chuyển hướng và bỏ qua liên kết, hack MooMoo.io đầy đủ tính năng, chế độ tối của Google Classroom, xóa hàng loạt thông báo bất hòa, xóa quảng cáo trên baidu, vô hiệu hóa google phân tích, trình chặn quảng cáo Facebook!
 
 // @namespace    idk, idc
-// @version      12.9
+// @version      13
 // @author       LWR Development Team + code from: Eugene Nouvellieu, ThaCheeseBun, Cazka
 
 // @match        https://*.discord.com/app
@@ -47,7 +47,6 @@
 // @antifeature  Tracking, for performance debugging
 // @match        https://ksw2-moomoo.glitch.me
 
-// @match        *://linkvertise.com/*
 // @match        *://www.google.com/recaptcha/api2/*
 
 // @match        *://diep.io/*
@@ -145,71 +144,6 @@ if (thisHost == (new URL(CONTROLLER_PAGE)).host) {
         tabObj.id = uuidv4();
         GM_saveTab(tabObj);
     });
-} else if (hostname === "linkvertise.com" && +pathname.slice(1, 2) !== NaN) {
-    if (isIFrame) return;
-
-    unsafeWindow.addEventListener("load", function() {
-        const targetLink = window.location.href;
-        const iframe = document.createElement("iframe");
-        iframe.src = "https://thebypasser.com/";
-        iframe.style.display = "none";
-        document.body.appendChild(iframe);
-        setTimeout(() => {
-            iframe.contentWindow.postMessage(btoa(encodeURIComponent(targetLink).toString()), "*");
-            //console.log("sent");
-        }, 650);
-    });
-
-    const eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
-    const eventer = window[eventMethod];
-    const messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
-    eventer(messageEvent, function(e) {
-        const key = e.message ? "message" : "data";
-        const data = e[key];
-        window.location.href = decodeURIComponent(atob(data));
-    }, false);
-} else if (hostname === "thebypasser.com" && isIFrame) {
-    const TICKRATE = 500; //lower or higher based on ur ping idrc
-
-    unsafeWindow.addEventListener("message", (event) => {
-        //const FROM = event.source;
-
-        if (event.origin !== "https://linkvertise.com") return;
-
-        const TARGET = decodeURIComponent(atob(event.data));
-        //console.log(TARGET);
-        let beginClicks = false;
-        const tryToExtract = setInterval(() => {
-            const targetBox = document.getElementById("input_link");
-            if (targetBox) {
-                targetBox.value = TARGET;
-                beginClicks = true;
-                clearInterval(tryToExtract);
-            };
-        }, 500);
-
-        const tryToClick = setInterval(() => {
-            if (!beginClicks) return;
-            const buttonToClick = document.getElementById("submit_btn");
-            if (buttonToClick?.click) {
-                clearInterval(tryToClick);
-                buttonToClick.click();
-            };
-        }, 500);
-
-        function gotLinkCallback(extractedLink) {
-            //console.log("extracted", extractedLink);
-            unsafeWindow.parent.postMessage(btoa(encodeURIComponent(extractedLink)), "*");
-        };
-        const waitForProcess = setInterval(() => {
-            const results = document.getElementById("results");
-            const xString = (results?.href || "");
-            if (xString.startsWith("http") && !xString.includes("thebypasser")) {
-                gotLinkCallback(results.href.toString());
-                clearInterval(waitForProcess);
-            };
-        }, TICKRATE);
-    }, false);
 } else if (loc.includes("recaptcha/api2/bframe")) {
     //module from https://greasyfork.org/en/scripts/31088-morecaptcha/code
     // Copyright (C) 2017 Eugene Nouvellieu <eugenox_gmail_com>
